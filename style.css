@@ -1,0 +1,339 @@
+*{
+    margin:0;
+    padding :0;
+}
+
+.form-control::placeholder{
+    text-align: center;
+
+}
+.mySearch{
+    width: 80%;
+}
+
+.no-border{
+    border: none !important;
+}
+/* button-1*/
+.btn__1{
+
+    padding :12.5px 30px;
+    border: 3px solid black;
+    border-radius: 100px;
+    background-color:#2ba8fb ;
+    color:#ffffff;
+    font-weight: bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.btn__1:hover {
+    background-color: #add8f4;
+    box-shadow: 0 0 20px #0a0b0b50;
+    transform: scale(0.7);
+}
+
+/*style on button 2*/
+.btn__2 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;!important;
+    color: ghostwhite;
+}
+
+.btn__2 span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.btn__2:hover span {
+    color: black;
+}
+
+.btn__2::before,
+.btn__2::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.btn__2::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn__2:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+/*style on button 3*/
+.btn__3{
+    outline: none;
+    cursor: pointer;
+    border:none;
+    padding :17px 32px;
+    margin: 0;
+
+    position: relative;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 12px;
+    color :#181515de;
+    background-color: transparent;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms linear;
+}
+.btn__3:hover{
+    background-color: black;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-4px);
+}
+
+
+/*style on button 4*/
+.btn__4{
+    outline: none;
+    cursor: pointer;
+    border:none;
+    padding : 14px 36px;
+    margin: 0;
+    height: 3em;
+    position: relative;
+    display: inline-block;
+    font-weight: 370;
+    font-size: 14px;
+    overflow: hidden;
+    border-radius: 500px;
+    color :#000000;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.658) 0 8px 15px;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    z-index: 1;
+}
+.btn__4::before{
+    content:"";
+    width: 0;
+    height: 3em;
+    border-radius: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .3s linear;
+    display: block;
+    z-index: -1;
+}
+.btn__4:hover::before{
+    width:100%;
+}
+
+/* Style on Button 5 */
+
+.btn__5 {
+    padding: 15px 30px;
+    border: 2px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+}
+.btn__5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%);
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+.btn__5:hover::before {
+    transform: scale(5);
+}
+.btn__5:hover {
+    border-color: #666666;
+    background: #292929;
+}
+
+/* Style on Button 6 */
+.btn__6 {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #d71c1c, -6px -6px 12px #6606cd;
+}
+
+.btn__6:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #d71c1c, inset -4px -4px 12px #6606cd;
+}
+/* Button 7 */
+
+.btn__7 {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn__7 span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.btn__7:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.btn__8 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    padding: 16px 24px;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
+    border: none;
+    border-radius: 20em;
+}
+
+.btn__8 svg {
+    margin-right: 8px;
+}
+.btn__9 {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #008cff;
+    text-shadow: none;
+    background: #ffffff;
+    box-shadow: transparent;
+    border: 1px solid #008cff;
+    transition: 0.5s ease;
+    user-select: none;
+}
+.btn__9:hover {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+/* Button 10 */
+
+.btn__10 {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+}
+
+.btn__10:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+@media (max-width: 576px) {
+    .mySearch{
+        width: 60%;
+    }
+
+
+}
+@media (min-width: 768px) {
+
+    .mySearch {
+        width: 65%;
+    }
+
+
+}
+@media (min-width: 992px) {
+
+    .mySearch{
+        width: 75%;
+    }
+
+}
+@media (min-width: 1200px) {
+    .mySearch{
+        width: 80%;
+    }
+
+}
